@@ -1,0 +1,45 @@
+import java.util.Scanner;
+public class SwitchExample1{
+public static void main( String args[]){
+Scanner sn = new Scanner( System.in );
+System.out.print("Type an integer number between 1 and 5:");
+int option = sn.nextInt();
+switch ( option) {
+case 1:
+System.out.println("You typed 1");
+break;
+case 2:
+System.out.println("You typed 2");
+break;
+case 3:
+System.out.println("You typed 3");
+break;
+case 4:
+System.out.println("You typed 4");
+break;
+case 5:
+System.out.println("You typed 5");
+break;
+default:
+System.out.println("You did not type a number beetween 1 and5");
+break;
+}
+if( option == 1 )
+System.out.println("You typed 1");
+else if( option == 2 )
+System.out.println("You typed 2");
+else if( option == 3 )
+System.out.println("You typed 3");
+else if( option == 4 )
+System.out.println("You typed 4");
+else if( option == 5 )
+System.out.println("You typed 5");
+else
+System.out.println("You did not type a number beetween 1 and 5");
+sn.close();
+  }
+}
+
+//En estas situaciones, se pueden usar sentencias if anidadas o
+consecutivas, o sentencias if-else-if-else. Otra forma es usar la estructura switch, la cual permite hacer una
+opción de un conjunto de posibilidades según el valor que tiene una variable tipo entero, carácter o cadena.
